@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#build image
+docker build -t rudyah/hub-repo-image-name .
+
+#run image
+docker run -p 8083:3000 -d --name container-name rudyah/hub-repo-image-name
+
+#push image
+docker push rudyah/hub-repo-image-name
+
+
