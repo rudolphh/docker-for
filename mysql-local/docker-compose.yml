@@ -1,8 +1,9 @@
-# to use type `docker-compose up -d`
+# to use type `docker-compose up -d`dock
 version: '3'
 services:
  mysql:
   image: mysql:8
+  container_name: mysql-localhost
   environment:
    MYSQL_DATABASE: 'ru_db'
    MYSQL_USER: 'rudyah'
